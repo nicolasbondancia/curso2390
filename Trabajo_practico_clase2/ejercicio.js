@@ -15,16 +15,16 @@ do{
 for (i=0; i<diasDeLaSemana.length; i++){
 	
 	if (diasDeLaSemana[i]==diaDeLaSemanaUsuario) {
+   		if (diasDeLaSemana[i]=="sabado" || diasDeLaSemana[i]=="sábado" || diasDeLaSemana[i]=="domingo" ) {
+    	alert("El día " + diaDeLaSemanaUsuario + " es fin de semana")
+		} else {
+	    alert("El día " + diaDeLaSemanaUsuario + " es dia laboral")
+		}
    		break
 	} else {
 	    console.log (diasDeLaSemana[i])
 	}
 }
 
-// If para mostrar mensaje si el dia de la semana es fin de semana o dia de semana
-if (diasDeLaSemana[i]=="sabado" || diasDeLaSemana[i]=="sábado" || diasDeLaSemana[i]=="domingo" ) {
-    	alert("El día " + diaDeLaSemanaUsuario + " es fin de semana")
-	} else {
-	    alert("El día " + diaDeLaSemanaUsuario + " es dia laboral")
-	}
+
 
